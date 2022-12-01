@@ -23,10 +23,11 @@ So, you have to run those scripts in the RMAN catalog database, or in the OEM re
 
 2- If you're running those scripts in the OEM repository, you should have a database link pointing to the RMAN catalog owner like this:
 
-	`SQL> CREATE DATABASE LINK RMAN CONNECT TO <rman_catalog_owner> IDENTIFIED BY <password> USING '<RMAN_CONNECTION_STRING>';`
+	SQL> CREATE DATABASE LINK RMAN CONNECT TO <rman_catalog_owner> IDENTIFIED BY <password> USING '<RMAN_CONNECTION_STRING>';
 	
 **NOTE**: If you have issues, you should ensure you can reach the RMAN catalog like this:
-	`sqlplus <rman_catalog_owner>/<password>@<RMAN_CONNECTION_STRING>`
+
+	sqlplus <rman_catalog_owner>/<password>@<RMAN_CONNECTION_STRING>
 	
 	
 3- Run the scripts in sqlplus and check the results.
