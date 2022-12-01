@@ -1,7 +1,11 @@
 # backup report queries
 
 This is a set of two queries I use to show up the status of the backups.
+
 I took the initial query from Gavin Soorma's website and improve it to produce a detailed report for every database in the RMAN catalog.
+Here is the original query:
+
+https://gavinsoorma.com.au/knowledge-base/script-query-the-rman-catalog-to-list-backup-completion-status/
 
 The idea is to use BIPublisher or Oracle Analytics Server to create a report and use the two scripts as source. 
 
